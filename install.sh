@@ -1,3 +1,7 @@
 #!/usr/bin/bash
 
-echo Hewwo wowd!
+function main () {
+    return 0
+}
+
+main
