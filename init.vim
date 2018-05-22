@@ -53,7 +53,7 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " search a file in the filetree
-:nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
+nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
 nnoremap <space>r <Plug>(unite_restart)
 
 vnoremap <silent> <Enter> :EasyAlign<cr>
@@ -67,6 +67,7 @@ let g:airline_powerline_fonts=1
 set nocompatible
 set bs=2
 set ruler
+set number
 syntax on
 
 set hlsearch
