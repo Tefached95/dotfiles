@@ -51,90 +51,91 @@ Plug 'altercation/vim-colors-solarized'
 call plug#end()
 
 " Leader key map
-:let mapleader = ";"
+    :let mapleader = ";"
 
-" ctags
-" au BufWritePost *.php silent! !eval '[ -f ".git/hooks/ctags" ] && .git/hooks/ctags' &
+" Vim Gutentags
+    let g:gutentags_project_root = [ '~/Documents/adomee' ]
 
 " highlight 80th col
-if (exists('+colorcolumn'))
-	set colorcolumn=80
-	highlight ColorColumn ctermbg=7
-endif
+    if (exists('+colorcolumn'))
+    	set colorcolumn=80
+    	highlight ColorColumn ctermbg=7
+    endif
 
 " Unite conf
-let g:unite_source_history_yank_enable = 1
-try
-	let g:unite_source_rec_async_command='ag --nocolor --nogroup -g ""'
-	call unite#filters#matcher_default#use(['matcher_fuzzy'])
-catch
-endtry
+    let g:unite_source_history_yank_enable = 1
+    try
+    	let g:unite_source_rec_async_command='ag --nocolor --nogroup -g ""'
+    	call unite#filters#matcher_default#use(['matcher_fuzzy'])
+    catch
+    endtry
 
 " Toggling NERD tree
-map <C-n> :NERDTreeToggle<CR>
+    map <C-n> :NERDTreeToggle<CR>
 
 " Close nvim if the only pane is NERDTree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " search a file in the filetree
-nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
-nnoremap <space>r <Plug>(unite_restart)
+    nnoremap <space><space> :split<cr> :<C-u>Unite -start-insert file_rec/async<cr>
+    nnoremap <space>r <Plug>(unite_restart)
 
 " EasyAlign
-vnoremap <silent> <Enter> :EasyAlign<cr>
+    vnoremap <silent> <Enter> :EasyAlign<cr>
 
 " PHP Stuff
-let g:syntastic_php_checkers = ['php', 'phpcs']
+    let g:syntastic_php_checkers = ['php', 'phpcs']
 
 " Phpactor stuff
-let g:phpactorPhpBin = "/usr/bin/php"
-let g:phpactorOmniError = v:true
-autocmd FileType php setlocal omnifunc=phpactor#Complete
+    let g:phpactorPhpBin = "/usr/bin/php"
+    let g:phpactorOmniError = v:true
+    autocmd FileType php setlocal omnifunc=phpactor#Complete
 
 " Context menu
-nmap <Leader>mm :call phpactor#ContextMenu()<CR>
+    nmap <Leader>mm :call phpactor#ContextMenu()<CR>
 
 " Class/member definition navigation
-nmap <Leader>o yiw:tag <C-R>"<CR>
+    nmap <Leader>o yiw:tag <C-R>"<CR>
 
 " Airline
-let g:airline_theme='solarized'
-let g:airline_powerline_fonts=1
+    let g:airline_theme='solarized'
+    let g:airline_powerline_fonts=1
 
 """ Personal
-
-set nocompatible
-set bs=2
-set ruler
-set number
-syntax on
+" Some main editor rules
+    set nocompatible
+    set bs=2
+    set ruler
+    set number
+    syntax on
 
 " Python syntax
-let python_highlight_all = 1
+    let python_highlight_all = 1
 
 " Highlight search
-set hlsearch
+    set hlsearch
+
 " for God's sake, stop beeping
-set visualbell
+    set visualbell
 
 " Tabs
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set autoindent
-set smartindent
-set cindent
-set cinoptions=(0,u0,U0
+    set tabstop=4
+    set softtabstop=4
+    set shiftwidth=4
+    set expandtab
+    set autoindent
+    set smartindent
+    set cindent
+    set cinoptions=(0,u0,U0
 
 " Splits
-set splitbelow
-set splitright
-
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+    set splitbelow
+    set splitright
+" Make pane navigation easier
+    nnoremap <C-J> <C-W><C-J>
+    nnoremap <C-K> <C-W><C-K>
+    nnoremap <C-L> <C-W><C-L>
+    nnoremap <C-H> <C-W><C-H>
 
 " Navigation with guides
     inoremap <Space><Tab> <Esc>/<++><Enter>df>i
