@@ -10,9 +10,12 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'airblade/vim-gitgutter'
 
 " Autocomplete
-" Plug 'valloric/youcompleteme', {'do': './install.py --all'}
 Plug 'roxma/nvim-completion-manager'
+Plug 'phpactor/phpactor', {'do': 'composer install'}
+Plug 'roxma/ncm-phpactor'
 Plug 'roxma/python-support.nvim'
+
+" Supertab
 Plug 'ervandew/supertab'
 
 " Auto closing
@@ -39,8 +42,6 @@ Plug 'vim-airline/vim-airline-themes'
 
 " PHP
 Plug 'StanAngeloff/php.vim'
-Plug 'roxma/ncm-phpactor'
-Plug 'phpactor/phpactor'
 
 " Refactoring tools
 Plug 'adoy/vim-php-refactoring-toolbox'
