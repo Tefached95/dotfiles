@@ -20,15 +20,15 @@ Xft.lcdfilter: lcddefault
 #include ".colors/solarized"
 
 ! URxvt
-URxvt.font:            xft:Meslo LG S DZ for Powerline:size=9
-URxvt.italicFont:      xft:Meslo LG S DZ for Powerline:italic:size=9:autohint=true
-URxvt.boldFont:        xft:Meslo LG S DZ for Powerline:bold:size=9:autohint=true
-URxvt.boldItalicFont:  xft:Meslo LG S DZ for Powerline:bold:italic:size=9:autohint=true
+URxvt.font:            xft:FantasqueSansMono Nerd Font Mono:size=11
+URxvt.italicFont:      xft:FantasqueSansMono Nerd Font Mono:italic:size=11:autohint=true
+URxvt.boldFont:        xft:FantasqueSansMono Nerd Font Mono:bold:size=11:autohint=true
+URxvt.boldItalicFont:  xft:FantasqueSansMono Nerd Font Mono:bold:italic:size=11:autohint=true
 
 URxvt.scrollBar:       false
 URxvt.scrollBar_right: false
 
-URxvt.letterSpace:     -1
+URxvt.letterSpace:     0
 URxvt.lineSpace:       1
 
 URxvt*depth:           24

@@ -5,6 +5,7 @@ Plug 'tpope/vim-fugitive'
 
 " Tags
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'majutsushi/tagbar'
 
 " Git gutter
 Plug 'airblade/vim-gitgutter'
@@ -13,6 +14,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'roxma/nvim-completion-manager'
 Plug 'phpactor/phpactor', {'do': 'composer install'}
 Plug 'roxma/ncm-phpactor'
+
+" Python
 Plug 'roxma/python-support.nvim'
 
 " Supertab
@@ -24,6 +27,7 @@ Plug 'tpope/vim-endwise'
 
 " NERD tree
 Plug 'scrooloose/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 
 " Syntax
 Plug 'scrooloose/syntastic'
@@ -49,13 +53,19 @@ Plug 'adoy/vim-php-refactoring-toolbox'
 " Colors
 Plug 'altercation/vim-colors-solarized'
 
+" Indent guides
+Plug 'nathanaelkane/vim-indent-guides'
+
 call plug#end()
 
 " Leader key map
-    :let mapleader = ";"
+    let mapleader = "ł"
 
 " Vim Gutentags
     let g:gutentags_project_root = [ '~/Documents/adomee' ]
+
+" Toggle tagbar
+    nmap <F8> :TagbarToggle<CR>
 
 " highlight 80th col
     if (exists('+colorcolumn'))
@@ -82,13 +92,13 @@ call plug#end()
     nnoremap <space>r <Plug>(unite_restart)
 
 " EasyAlign
-    vnoremap <silent> <Enter> :EasyAlign<cr>
+    vnoremap <silent> <<CR>> :EasyAlign<cr>
 
 " PHP Stuff
     let g:syntastic_php_checkers = ['php', 'phpcs']
 
 " Phpactor stuff
-    let g:phpactorPhpBin = "/usr/bin/php"
+    let g:phpactorPhpBin = "php"
     let g:phpactorOmniError = v:true
     autocmd FileType php setlocal omnifunc=phpactor#Complete
 
@@ -97,6 +107,9 @@ call plug#end()
 
 " Class/member definition navigation
     nmap <Leader>o yiw:tag <C-R>"<CR>
+
+" Close autocomplete menu when Enter is pressed
+    inoremap <expr> <C-CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
 " Airline
     let g:airline_theme='solarized'
@@ -128,35 +141,46 @@ call plug#end()
     set smartindent
     set cindent
     set cinoptions=(0,u0,U0
+    let g:indent_guides_start_level = 2
 
 " Splits
     set splitbelow
     set splitright
+
 " Make pane navigation easier
-    nnoremap <C-J> <C-W><C-J>
-    nnoremap <C-K> <C-W><C-K>
-    nnoremap <C-L> <C-W><C-L>
-    nnoremap <C-H> <C-W><C-H>
+    map <C-h> <C-w>h
+    map <C-j> <C-w>j
+    map <C-k> <C-w>k
+    map <C-l> <C-w>l
 
 " Navigation with guides
-    inoremap <Space><Tab> <Esc>/<++><Enter>df>i
-    vnoremap <Space><Tab> <Esc>/<++><Enter><Esc>df>i
-    map <Space><Tab> <Esc>/<++><Enter><Esc>df>i
+    inoremap <Space><Space> <Esc>/<++><CR>:noh<CR>cf>
+    vnoremap <Space><Space> <Esc>/<++><CR><Esc>:noh<CR>cf>
+    map <Space><Space> <Esc>/<++><<CR>><Esc>:noh<CR>cf>
     inoremap ;gui <++>
 
+" Navigate back to previous buffer
+    map <Leader>p <Esc>:e#<CR>
+
 " PHP specific snippets
-    autocmd FileType php inoremap ;fe foreach<Space>( <++> as <++>)<Space>{<++>}<Esc>F(i
-    autocmd FileType php inoremap ;fr for<Space>( <++>; <++>; <++>)<Space>{<++>}<Esc>F(i
+    autocmd FileType php inoremap ;fe foreach ( <++> as <++>) {<++>}<Esc>F(i
+    autocmd FileType php inoremap ;fr for ( <++>; <++>; <++>) {<++>}<Esc>F(i
     autocmd FileType php inoremap ;a array(<++>)<Esc>F(i
+    autocmd FileType php inoremap ;cl class <++><CR>{<++>}<Esc>kTsi
+    autocmd FileType php inoremap ;ce class <++> extends <++><CR>{<++>}<Esc>kTsi
+    autocmd FileType php inoremap ;ci class <++> implements <++><CR>{<++>}<Esc>kTsi
+    autocmd FileType php inoremap ;cei class <++> extends <++> implements <++><CR>{<++>}<Esc>kTsi
+    autocmd FileType php inoremap ;if if ( <++>) {<++>}<Esc>F(i
+    autocmd FileType php inoremap ;elif else if ( <++>) {<++>}<Esc>F(i
+    autocmd FileType php inoremap ;else else {<++>}<Esc>F{i
 
 " Colors
-set background=light
+    set background=light
+    try
+    	colorscheme solarized
+    catch
+    endtry
 
-try
-	colorscheme solarized
-catch
-endtry
+    set t_Co=16
 
-set t_Co=16
-
-call togglebg#map("<F5>")
+    call togglebg#map("<F5>")
