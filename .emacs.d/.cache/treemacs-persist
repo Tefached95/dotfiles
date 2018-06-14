@@ -1,0 +1,4 @@
+([cl-struct-treemacs-workspace "Default Workspace"
+			       ([cl-struct-treemacs-project "AdomeeCommon" "/home/marklobucar/Documents/adomee/AdomeeCommon"]
+				[cl-struct-treemacs-project "AdomeeAdmin" "/home/marklobucar/Documents/adomee/AdomeeAdmin"]
+				[cl-struct-treemacs-project "php-madlibs" "/home/marklobucar/Documents/Projects/php-madlibs"])])

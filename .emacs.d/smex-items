@@ -1,0 +1,18 @@
+
+;; ----- smex-history -----
+(
+ customize-group
+ customize-themes
+ quit-window
+ cd
+ 5x5
+ arp
+ dbx
+)
+
+;; ----- smex-data -----
+(
+ (quit-window . 1)
+ (customize-group . 3)
+ (customize-themes . 1)
+)

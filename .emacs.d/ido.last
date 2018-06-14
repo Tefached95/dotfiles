@@ -1,0 +1,49 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/app/adm/" . "alexa-tour/")
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/app/" . "adm/")
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/" . "app/")
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/" . "www/")
+ ("/home/marklobucar/Documents/adomee/" . "AdomeeWeb/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/marklobucar/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "config.org"
+ "init.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/marklobucar/.emacs.d/" (23312 20504 462274 193000) "init.el~" "config.el" "config.org~" "./" "smex-items" "elpa/" "config.org" "../" "ido.last" "init.el" "auto-save-list/" "ido.last~")
+
+ ("/home/marklobucar/" (23312 17989 664155 678000) ".dbus/" ".xprofile" ".zcompdump" ".config/" ".lyrics/" ".eclipse/" ".dir_colors" ".xinitrc" ".oh-my-zsh/" ".Xresources.bak" "Music/" "Videos/" ".bash_profile" "Crane/" ".epsxe/" "Templates/" ".macromedia/" ".face" ".pylint.d/" ".viminfo" "./" ".zshrc.pre-oh-my-zsh" ".ngrok2/" "forefather_last-of-the-line_lyrics.txt" ".bashrc" ".gnome/" ".bash_logout" ".histfile" ".zsh_history" ".PyCharm2018.1/" ".oracle_jre_usage/" ".emacs.d/" "Documents/" ".colors/" ".rustup/" ".fehbg" ".mono/" ".steampid" "Unity-2017.3.0p2/" ".freemind/" ".esd_auth" ".xsession" "Firefox_wallpaper.png" ".PhpStorm2018.1/" ".mozilla/" ".python_history" ".v8flags.6.2.414.46-node.17.36a2258e665c1b48368cea14ae3b6672.json" "eclipse-workspace/" ".adobe/" ".quokka/" ".multirust/" ".npm/" ".swt/" ".dotnet/" "Public/" ".vagrant.d/" ".i3/" ".gitconfig" "Desktop/" ".steam/" ".zcompdump-marko-thinkpad-5.4.2" ".bash_history" "../" "sketchbook/" ".kde/" ".gitkraken/" ".atom/" ".PhpStorm2017.3/" "VirtualBox VMs/" "winshare/" "Readme" ".Xresources" "launch.sh" ".3T/" ".ssh/" ".extend.bashrc" ".cache/" ".zprofile" ".gnupg/" ".profile" ".v8flags.6.2.414.46-node.23.36a2258e665c1b48368cea14ae3b6672.json" "Unity-2017.3.1f1/" ".yarnrc" ".v8flags.6.2.414.46-node.20.36a2258e665c1b48368cea14ae3b6672.json" ".lesshst" ".local/" ".zshrc" ".ncmpcpp/" ".vscode/" "Downloads/" ".pki/" ".zcompdump-marko-thinkpad-5.5" ".processing/" ".phpls/" ".steampath" ".v8flags.6.2.414.46-node.15.36a2258e665c1b48368cea14ae3b6672.json" ".ICEauthority" "Pictures/" ".zcompdump-marko-thinkpad-5.5.1" ".zsh-update" ".cargo/" ".Xclients" ".yarn/" "adomee-agent-api-v1.69.0.postman_collection.json" ".java/" ".screenlayout/" ".v8flags.6.2.414.46-node.18.36a2258e665c1b48368cea14ae3b6672.json")
+
+ ("/home/marklobucar/.emacs.d/elpa/" (23312 18990 237665 485000) "which-key-20180522.711/" "smex-20151212.1409/" "./" "seq-2.20.signed" "color-theme-solarized-20171024.825/" "avy-20180514.1100/" "hungry-delete-20170411.1802/" "rainbow-mode-1.0.1.signed" "ido-vertical-mode-20160429.1037/" "org-bullets-20171127.526/" "switch-window-20180528.1400/" "use-package-20180314.1143/" "../" "rainbow-mode-1.0.1/" "beacon-20171017.1540/" "seq-2.20/" "swap-buffers-readme.txt" "solarized-theme-20180506.440/" "color-theme-20070910.1007/" "archives/" "gnupg/" "bind-key-20180512.2130/" "dash-20180413.30/")
+
+ ("/home/marklobucar/.emacs.d/elpa/hungry-delete-20170411.1802/" (23312 18990 410999 480000) "./" "hungry-delete.elc" "hungry-delete-autoloads.el" "../" "hungry-delete.el" "hungry-delete-pkg.el")
+
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/app/adm/alexa-tour/" (23309 3885 346218 111000) "alexa-results-info.directive.js" "alexa-tour-player.factory.js" "alexa-details.directive.js" "alexa-tour-scene.tmpl.html" "alexa-pin-element.tmpl.html" "alexa.module.js" "alexa-tour-viewport.directive.js" "alexa-details.tmpl.html" "./" "alexa-actions.directive.js" "alexa-results.directive.js" "alexa-tour.controller.js" "alexa-pin-element.directive.js" "viewport-zoom-util.factory.js" "alexa-tour-hotspot.directive.js" "alexa-tour-hotspots.directive.js" "alexa-tour-demo.controller.js" "alexa-tour-tooltips.directive.js" "alexa-results.tmpl.html" "alexa-results-info.tmpl.html" "../" "grouped-hotspots.factory.js" "transition-handler.factory.js" "viewport-view-boundaries.factory.js" "alexa-tour-test.controller.js" "alexa-tour-hotspot.tmpl.html" "alexa-actions.tmpl.html" "alexa-tour.service.js" "alexa-tour-context.directive.js" "alexa-tour-scene.directive.js" "alexa-tour-viewport.tmpl.html" "alexa-form-info.tmpl.html" "alexa-form-info.directive.js")
+
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/app/adm/" (23289 18830 328858 693000) "convo/" "api/" "adm.module.js" "./" "auth.interceptor.js" "adm.filters.js" "profile/" "alexa-tour/" "home/" "msgs/" "agent/" "main.controller.js" "../" "header/" "auth/" "remote-tour/" "search/" "details/" "components/")
+
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/app/" (23110 1626 152647 367000) "app.run.js" "./" "../" "adm/" "app.module.js")
+
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/www/" (23303 61962 155152 44000) "alexa-tour-test.tmpl.php" "css/" "alexa-tour.tmpl.php" "app/" "_js-cdn.include.php" "error503.php" "home.tmpl.php" "virtual-tour.tmpl.php" "blend-demo.tmpl.php" "./" "_js.include.php" "details.tmpl.php" "bot-demo.tmpl.php" "init.php" "favicon.ico" "home-coming-soon.tmpl.php" "_css.include.php" "index.php" "images/" "still-image-tour.tmpl.php" "_topbar.include.php" ".gitignore" "config.php" "_sidebar.include.php" "_navbar.search.include.php" "remote-details.tmpl.php" "bower_components/" "_css.include-min.php" "error404.php" "my-profile.tmpl.php" "../" "agent.tmpl.php" "_topbar.search.include.php" "config.tole.php" "config.aws.prod.php" "_css.include-jango.php" "config.example.php" "_navbar.include.php" "krpano/" "_js.include-jango.php" ".htaccess" "webview/" "config.aws.php" "error500.php" "assets/" "search.tmpl.php" "_js.include-min.php" "favicon_old.ico")
+
+ ("/home/marklobucar/Documents/adomee/AdomeeWeb/" (23169 37982 6495 744000) "www/" ".buildpath" "./" "log/" ".settings/" "package.json" "node_modules/" ".project" "gulpfile.js" "bower.json" ".gitignore" "../" ".bowerrc" ".tern-project" "library/")
+
+ ("/home/marklobucar/Documents/adomee/" (23309 3887 156220 121000) "AdomeeComWeb/" "./" "nbproject/" "build.xml" "AdomeeWeb/" ".settings/" ".project" ".idea/" "AdomeeMedia/" "tags" "AdomeeAgent/" ".gitignore" "AdomeeCommon/" "../" "build/" "AdomeeAdmin/" "feeds/" ".git/" "AdomeeSlice/" ".metadata/" "AdomeeRest/")
+
+ ("/home/marklobucar/Documents/" (23299 65249 577486 999000) "adomee-scrappers/" "owned_files.txt" "Listing Data request format" "./" "pocketbroker.code-workspace" "pkeys/" "hewwo.py" "fonts-master.zip" "lost_files.txt" "Projects/" "tisja_kljakovic.odt" "ngrok/" "fonts-master/" "Pete Wolf Band - Girl Crush lyrics.txt" "SanFranciscoFont-master/" "Tisja.odt" "all_files.txt" "../" "Fotografije bekap/" "Google NLP.postman_environment.json" "adomee/" "Games/" "OpenVPN Config/" "example_res.json" "adomee-vagrant/" "wp-convo-works/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,1 @@
+("~/Documents/adomee/" "~/Documents/Projects/pc_component_picker/" "~/Documents/Projects/Digimon Tamagochi Rust/")
